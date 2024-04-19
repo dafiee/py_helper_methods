@@ -1,0 +1,45 @@
+<form method="POST" action="">@csrf<div class="col-sm-6">
+        <div class="form-group">
+            <label for="institution-id">Bank/Financial Institution</label>
+            <input type="text" class="form-control @error('institution') is-invalid @enderror"
+                id="institution-id" placeholder="Enter ..." name="institution" value="{{ old('institution') }}">
+            @error('institution')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="branch-id">Branch</label>
+            <input type="text" class="form-control @error('branch') is-invalid @enderror"
+                id="branch-id" placeholder="Enter ..." name="branch" value="{{ old('branch') }}">
+            @error('branch')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="balance-id">Balance (DR/CR)</label>
+            <input type="text" class="form-control @error('balance') is-invalid @enderror"
+                id="balance-id" placeholder="Enter ..." name="balance" value="{{ old('balance') }}">
+            @error('balance')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="amount_recorded-id">Amount Recorded</label>
+            <input type="text" class="form-control @error('amount_recorded') is-invalid @enderror"
+                id="amount_recorded-id" placeholder="Enter ..." name="amount_recorded" value="{{ old('amount_recorded') }}">
+            @error('amount_recorded')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div></form>

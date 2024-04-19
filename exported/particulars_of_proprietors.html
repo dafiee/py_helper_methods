@@ -1,0 +1,67 @@
+<form method="POST" action="">@csrf<div class="col-sm-6">
+        <div class="form-group">
+            <label for="name-id">Name</label>
+            <input type="text" class="form-control @error('name') is-invalid @enderror"
+                id="name-id" placeholder="Enter ..." name="name" value="{{ old('name') }}">
+            @error('name')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="proprietors_id-id">ID Number</label>
+            <input type="text" class="form-control @error('proprietors_id') is-invalid @enderror"
+                id="proprietors_id-id" placeholder="Enter ..." name="proprietors_id" value="{{ old('proprietors_id') }}">
+            @error('proprietors_id')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="proprietors_pin-id">PIN Number</label>
+            <input type="text" class="form-control @error('proprietors_pin') is-invalid @enderror"
+                id="proprietors_pin-id" placeholder="Enter ..." name="proprietors_pin" value="{{ old('proprietors_pin') }}">
+            @error('proprietors_pin')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="proprietors_phone-id">Telephone Number</label>
+            <input type="text" class="form-control @error('proprietors_phone') is-invalid @enderror"
+                id="proprietors_phone-id" placeholder="Enter ..." name="proprietors_phone" value="{{ old('proprietors_phone') }}">
+            @error('proprietors_phone')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="proprietors_mobile-id">Mobile Number</label>
+            <input type="text" class="form-control @error('proprietors_mobile') is-invalid @enderror"
+                id="proprietors_mobile-id" placeholder="Enter ..." name="proprietors_mobile" value="{{ old('proprietors_mobile') }}">
+            @error('proprietors_mobile')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="proprietors_postal_address-id">Postal Address</label>
+            <input type="text" class="form-control @error('proprietors_postal_address') is-invalid @enderror"
+                id="proprietors_postal_address-id" placeholder="Enter ..." name="proprietors_postal_address" value="{{ old('proprietors_postal_address') }}">
+            @error('proprietors_postal_address')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div></form>

@@ -1,0 +1,210 @@
+<form method="POST" action="">@csrf<div class="col-sm-6">
+        <div class="form-group">
+            <label for="name_of_entity-id">Name of Entity</label>
+            <input type="text" class="form-control @error('name_of_entity') is-invalid @enderror"
+                id="name_of_entity-id" placeholder="Enter ..." name="name_of_entity" value="{{ old('name_of_entity') }}">
+            @error('name_of_entity')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="reg_no-id">Registration number</label>
+            <input type="text" class="form-control @error('reg_no') is-invalid @enderror"
+                id="reg_no-id" placeholder="Enter ..." name="reg_no" value="{{ old('reg_no') }}">
+            @error('reg_no')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="business_activity_type-id">Business Activity Type</label>
+            <input type="text" class="form-control @error('business_activity_type') is-invalid @enderror"
+                id="business_activity_type-id" placeholder="Enter ..." name="business_activity_type" value="{{ old('business_activity_type') }}">
+            @error('business_activity_type')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="liscence_no-id">Liscence Number</label>
+            <input type="text" class="form-control @error('liscence_no') is-invalid @enderror"
+                id="liscence_no-id" placeholder="Enter ..." name="liscence_no" value="{{ old('liscence_no') }}">
+            @error('liscence_no')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="pin_no-id">Pin Number</label>
+            <input type="text" class="form-control @error('pin_no') is-invalid @enderror"
+                id="pin_no-id" placeholder="Enter ..." name="pin_no" value="{{ old('pin_no') }}">
+            @error('pin_no')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="vat-id">Value Added Tax (V.A.T)</label>
+            <input type="text" class="form-control @error('vat') is-invalid @enderror"
+                id="vat-id" placeholder="Enter ..." name="vat" value="{{ old('vat') }}">
+            @error('vat')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="type_of_entity-id">Type of Entity</label>
+            <input type="text" class="form-control @error('type_of_entity') is-invalid @enderror"
+                id="type_of_entity-id" placeholder="Enter ..." name="type_of_entity" value="{{ old('type_of_entity') }}">
+            @error('type_of_entity')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="business_email-id">Business Email Address</label>
+            <input type="text" class="form-control @error('business_email') is-invalid @enderror"
+                id="business_email-id" placeholder="Enter ..." name="business_email" value="{{ old('business_email') }}">
+            @error('business_email')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="postal_status-id">Postal Status</label>
+            <input type="text" class="form-control @error('postal_status') is-invalid @enderror"
+                id="postal_status-id" placeholder="Enter ..." name="postal_status" value="{{ old('postal_status') }}">
+            @error('postal_status')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="postal_address-id">Postal Address</label>
+            <input type="text" class="form-control @error('postal_address') is-invalid @enderror"
+                id="postal_address-id" placeholder="Enter ..." name="postal_address" value="{{ old('postal_address') }}">
+            @error('postal_address')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="business_phone-id">Telephone Number</label>
+            <input type="text" class="form-control @error('business_phone') is-invalid @enderror"
+                id="business_phone-id" placeholder="Enter ..." name="business_phone" value="{{ old('business_phone') }}">
+            @error('business_phone')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="physical_location-id">Physical Location</label>
+            <input type="text" class="form-control @error('physical_location') is-invalid @enderror"
+                id="physical_location-id" placeholder="Enter ..." name="physical_location" value="{{ old('physical_location') }}">
+            @error('physical_location')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="town-id">Town</label>
+            <input type="text" class="form-control @error('town') is-invalid @enderror"
+                id="town-id" placeholder="Enter ..." name="town" value="{{ old('town') }}">
+            @error('town')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="street-id">Street/Area</label>
+            <input type="text" class="form-control @error('street') is-invalid @enderror"
+                id="street-id" placeholder="Enter ..." name="street" value="{{ old('street') }}">
+            @error('street')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="building-id">Building</label>
+            <input type="text" class="form-control @error('building') is-invalid @enderror"
+                id="building-id" placeholder="Enter ..." name="building" value="{{ old('building') }}">
+            @error('building')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="premises_status-id">Business Premises (status)</label>
+            <input type="text" class="form-control @error('premises_status') is-invalid @enderror"
+                id="premises_status-id" placeholder="Enter ..." name="premises_status" value="{{ old('premises_status') }}">
+            @error('premises_status')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="lease_period-id">Lease Period</label>
+            <input type="text" class="form-control @error('lease_period') is-invalid @enderror"
+                id="lease_period-id" placeholder="Enter ..." name="lease_period" value="{{ old('lease_period') }}">
+            @error('lease_period')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="remaining_period-id">Remaining Period</label>
+            <input type="text" class="form-control @error('remaining_period') is-invalid @enderror"
+                id="remaining_period-id" placeholder="Enter ..." name="remaining_period" value="{{ old('remaining_period') }}">
+            @error('remaining_period')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="rent_payable-id">Rent Payable</label>
+            <input type="text" class="form-control @error('rent_payable') is-invalid @enderror"
+                id="rent_payable-id" placeholder="Enter ..." name="rent_payable" value="{{ old('rent_payable') }}">
+            @error('rent_payable')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div></form>

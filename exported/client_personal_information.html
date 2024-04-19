@@ -1,0 +1,254 @@
+<form method="POST" action="">@csrf<div class="col-sm-6">
+        <div class="form-group">
+            <label for="title-id">Title</label>
+            <input type="text" class="form-control @error('title') is-invalid @enderror"
+                id="title-id" placeholder="Enter ..." name="title" value="{{ old('title') }}">
+            @error('title')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="name-id">Applicant's Name</label>
+            <input type="text" class="form-control @error('name') is-invalid @enderror"
+                id="name-id" placeholder="Enter ..." name="name" value="{{ old('name') }}">
+            @error('name')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="nin-id">National ID Number</label>
+            <input type="text" class="form-control @error('nin') is-invalid @enderror"
+                id="nin-id" placeholder="Enter ..." name="nin" value="{{ old('nin') }}">
+            @error('nin')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="passport-id">Passport Number</label>
+            <input type="text" class="form-control @error('passport') is-invalid @enderror"
+                id="passport-id" placeholder="Enter ..." name="passport" value="{{ old('passport') }}">
+            @error('passport')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="passport-id">Marital Status</label>
+            <input type="text" class="form-control @error('passport') is-invalid @enderror"
+                id="passport-id" placeholder="Enter ..." name="passport" value="{{ old('passport') }}">
+            @error('passport')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="passport-id">Date of Birth</label>
+            <input type="text" class="form-control @error('passport') is-invalid @enderror"
+                id="passport-id" placeholder="Enter ..." name="passport" value="{{ old('passport') }}">
+            @error('passport')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="gender-id">Gender</label>
+            <input type="text" class="form-control @error('gender') is-invalid @enderror"
+                id="gender-id" placeholder="Enter ..." name="gender" value="{{ old('gender') }}">
+            @error('gender')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="nationality-id">Nationality</label>
+            <input type="text" class="form-control @error('nationality') is-invalid @enderror"
+                id="nationality-id" placeholder="Enter ..." name="nationality" value="{{ old('nationality') }}">
+            @error('nationality')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="no_of_dependants-id">Number of dependants</label>
+            <input type="text" class="form-control @error('no_of_dependants') is-invalid @enderror"
+                id="no_of_dependants-id" placeholder="Enter ..." name="no_of_dependants" value="{{ old('no_of_dependants') }}">
+            @error('no_of_dependants')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="po_box-id">Post Address Box</label>
+            <input type="text" class="form-control @error('po_box') is-invalid @enderror"
+                id="po_box-id" placeholder="Enter ..." name="po_box" value="{{ old('po_box') }}">
+            @error('po_box')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="post_code-id">Code</label>
+            <input type="text" class="form-control @error('post_code') is-invalid @enderror"
+                id="post_code-id" placeholder="Enter ..." name="post_code" value="{{ old('post_code') }}">
+            @error('post_code')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="postal_address-id">Postal Address</label>
+            <input type="text" class="form-control @error('postal_address') is-invalid @enderror"
+                id="postal_address-id" placeholder="Enter ..." name="postal_address" value="{{ old('postal_address') }}">
+            @error('postal_address')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="postal_code-id">Postal Code</label>
+            <input type="text" class="form-control @error('postal_code') is-invalid @enderror"
+                id="postal_code-id" placeholder="Enter ..." name="postal_code" value="{{ old('postal_code') }}">
+            @error('postal_code')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="phone-id">Phone</label>
+            <input type="text" class="form-control @error('phone') is-invalid @enderror"
+                id="phone-id" placeholder="Enter ..." name="phone" value="{{ old('phone') }}">
+            @error('phone')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="spouse_name-id">Spouse's name</label>
+            <input type="text" class="form-control @error('spouse_name') is-invalid @enderror"
+                id="spouse_name-id" placeholder="Enter ..." name="spouse_name" value="{{ old('spouse_name') }}">
+            @error('spouse_name')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="residence_id_no-id">Residence</label>
+            <input type="text" class="form-control @error('residence_id_no') is-invalid @enderror"
+                id="residence_id_no-id" placeholder="Enter ..." name="residence_id_no" value="{{ old('residence_id_no') }}">
+            @error('residence_id_no')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="estate-id">Estate</label>
+            <input type="text" class="form-control @error('estate') is-invalid @enderror"
+                id="estate-id" placeholder="Enter ..." name="estate" value="{{ old('estate') }}">
+            @error('estate')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="town-id">Town</label>
+            <input type="text" class="form-control @error('town') is-invalid @enderror"
+                id="town-id" placeholder="Enter ..." name="town" value="{{ old('town') }}">
+            @error('town')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="house_no-id">House No.</label>
+            <input type="text" class="form-control @error('house_no') is-invalid @enderror"
+                id="house_no-id" placeholder="Enter ..." name="house_no" value="{{ old('house_no') }}">
+            @error('house_no')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="house_no-id">Status</label>
+            <input type="text" class="form-control @error('house_no') is-invalid @enderror"
+                id="house_no-id" placeholder="Enter ..." name="house_no" value="{{ old('house_no') }}">
+            @error('house_no')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="length_of_stay-id">Length of stay</label>
+            <input type="text" class="form-control @error('length_of_stay') is-invalid @enderror"
+                id="length_of_stay-id" placeholder="Enter ..." name="length_of_stay" value="{{ old('length_of_stay') }}">
+            @error('length_of_stay')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="landlord_name-id">Name of Landlord</label>
+            <input type="text" class="form-control @error('landlord_name') is-invalid @enderror"
+                id="landlord_name-id" placeholder="Enter ..." name="landlord_name" value="{{ old('landlord_name') }}">
+            @error('landlord_name')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="landlord_phone-id">Landlord Phone</label>
+            <input type="text" class="form-control @error('landlord_phone') is-invalid @enderror"
+                id="landlord_phone-id" placeholder="Enter ..." name="landlord_phone" value="{{ old('landlord_phone') }}">
+            @error('landlord_phone')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div></form>

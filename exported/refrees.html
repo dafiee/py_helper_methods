@@ -1,0 +1,45 @@
+<form method="POST" action="">@csrf<div class="col-sm-6">
+        <div class="form-group">
+            <label for="refree_name-id">Name</label>
+            <input type="text" class="form-control @error('refree_name') is-invalid @enderror"
+                id="refree_name-id" placeholder="Enter ..." name="refree_name" value="{{ old('refree_name') }}">
+            @error('refree_name')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="refree_address-id">Address</label>
+            <input type="text" class="form-control @error('refree_address') is-invalid @enderror"
+                id="refree_address-id" placeholder="Enter ..." name="refree_address" value="{{ old('refree_address') }}">
+            @error('refree_address')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="refree_phone-id">Telephone</label>
+            <input type="text" class="form-control @error('refree_phone') is-invalid @enderror"
+                id="refree_phone-id" placeholder="Enter ..." name="refree_phone" value="{{ old('refree_phone') }}">
+            @error('refree_phone')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="refree_relationship-id">Relationship</label>
+            <input type="text" class="form-control @error('refree_relationship') is-invalid @enderror"
+                id="refree_relationship-id" placeholder="Enter ..." name="refree_relationship" value="{{ old('refree_relationship') }}">
+            @error('refree_relationship')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div></form>

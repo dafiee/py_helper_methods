@@ -1,0 +1,9 @@
+<select class="form-control select2bs4 @error('type') is-invalid @enderror"
+                                    style="width: 100%;" id="roomType" name="type">
+                                    <option disabled selected>Select type of room...</option>
+                                    @foreach ($types as $type)
+                                        <option value="{{ $type->name }}"
+                                            @if (old('type') == $type->name) selected @endif>{{ $type->name }}
+                                        </option>
+                                    @endforeach
+                                </select>

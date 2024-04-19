@@ -1,0 +1,78 @@
+<form method="POST" action="">@csrf<div class="col-sm-6">
+        <div class="form-group">
+            <label for="eco_branch_name-id">Branch Name</label>
+            <input type="text" class="form-control @error('eco_branch_name') is-invalid @enderror"
+                id="eco_branch_name-id" placeholder="Enter ..." name="eco_branch_name" value="{{ old('eco_branch_name') }}">
+            @error('eco_branch_name')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="eco_amount_advanced-id">Amount Advanced</label>
+            <input type="text" class="form-control @error('eco_amount_advanced') is-invalid @enderror"
+                id="eco_amount_advanced-id" placeholder="Enter ..." name="eco_amount_advanced" value="{{ old('eco_amount_advanced') }}">
+            @error('eco_amount_advanced')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="eco_data_advanced-id">Data Advanced</label>
+            <input type="text" class="form-control @error('eco_data_advanced') is-invalid @enderror"
+                id="eco_data_advanced-id" placeholder="Enter ..." name="eco_data_advanced" value="{{ old('eco_data_advanced') }}">
+            @error('eco_data_advanced')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="eco_loan_period-id">Loan Period</label>
+            <input type="text" class="form-control @error('eco_loan_period') is-invalid @enderror"
+                id="eco_loan_period-id" placeholder="Enter ..." name="eco_loan_period" value="{{ old('eco_loan_period') }}">
+            @error('eco_loan_period')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="eco_installment-id">Installment</label>
+            <input type="text" class="form-control @error('eco_installment') is-invalid @enderror"
+                id="eco_installment-id" placeholder="Enter ..." name="eco_installment" value="{{ old('eco_installment') }}">
+            @error('eco_installment')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="eco_balance-id">Balance (DR/CR)</label>
+            <input type="text" class="form-control @error('eco_balance') is-invalid @enderror"
+                id="eco_balance-id" placeholder="Enter ..." name="eco_balance" value="{{ old('eco_balance') }}">
+            @error('eco_balance')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="eco_repayment_record-id">Repayment Record</label>
+            <input type="text" class="form-control @error('eco_repayment_record') is-invalid @enderror"
+                id="eco_repayment_record-id" placeholder="Enter ..." name="eco_repayment_record" value="{{ old('eco_repayment_record') }}">
+            @error('eco_repayment_record')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div></form>

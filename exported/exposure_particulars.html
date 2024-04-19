@@ -1,0 +1,67 @@
+<form method="POST" action="">@csrf<div class="col-sm-6">
+        <div class="form-group">
+            <label for="loan_requested-id">Loan Amount Requested</label>
+            <input type="text" class="form-control @error('loan_requested') is-invalid @enderror"
+                id="loan_requested-id" placeholder="Enter ..." name="loan_requested" value="{{ old('loan_requested') }}">
+            @error('loan_requested')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="loan_requested-id">Specific Purpose</label>
+            <input type="text" class="form-control @error('loan_requested') is-invalid @enderror"
+                id="loan_requested-id" placeholder="Enter ..." name="loan_requested" value="{{ old('loan_requested') }}">
+            @error('loan_requested')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="cost_of_project-id">Cost of Project</label>
+            <input type="text" class="form-control @error('cost_of_project') is-invalid @enderror"
+                id="cost_of_project-id" placeholder="Enter ..." name="cost_of_project" value="{{ old('cost_of_project') }}">
+            @error('cost_of_project')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="own_contribution-id">Own Contribution</label>
+            <input type="text" class="form-control @error('own_contribution') is-invalid @enderror"
+                id="own_contribution-id" placeholder="Enter ..." name="own_contribution" value="{{ old('own_contribution') }}">
+            @error('own_contribution')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="repayment_period-id">Repayment Period</label>
+            <input type="text" class="form-control @error('repayment_period') is-invalid @enderror"
+                id="repayment_period-id" placeholder="Enter ..." name="repayment_period" value="{{ old('repayment_period') }}">
+            @error('repayment_period')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div><div class="col-sm-6">
+        <div class="form-group">
+            <label for="monthly_installments-id">Monthly Installments</label>
+            <input type="text" class="form-control @error('monthly_installments') is-invalid @enderror"
+                id="monthly_installments-id" placeholder="Enter ..." name="monthly_installments" value="{{ old('monthly_installments') }}">
+            @error('monthly_installments')
+                <span class="error invalid-feedback">
+                {{ $message }}
+                </span>
+            @enderror
+        </div>
+    </div></form>
