@@ -1,5 +1,20 @@
 """Creates forms from list/dict of names"""
 
+eco_user = {
+    'Name': 'name',
+    'Email Address': 'email',
+    'Phone': 'phone',
+    'Password': 'password',
+    'Confirm Password': 'password_confirmation',
+}
+
+eco_loan = {
+    'Loan name': 'name',
+    'Description': 'description',
+    'Image': 'image',
+    'Loan Application Form': 'form',
+}
+
 client_personal_information = {
     'Title': 'title',
     "Applicant's Name": 'name',

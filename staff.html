@@ -1,0 +1,35 @@
+<form method="POST" action="">
+  @csrf
+  <div class="col-sm-6">
+    <div class="form-group">
+      <label for="first_appointment_date-id">First Appoinment Date</label>
+      <input
+        type="text"
+        class="form-control @error('first_appointment_date') is-invalid @enderror"
+        id="first_appointment_date-id"
+        placeholder="Enter ..."
+        name="first_appointment_date"
+        value="{{ old('first_appointment_date') }}"
+      />
+      @error('first_appointment_date')
+      <span class="error invalid-feedback"> {{ $message }} </span>
+      @enderror
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="form-group">
+      <label for="appointment_duration-id">Appointment Duration</label>
+      <input
+        type="text"
+        class="form-control @error('appointment_duration') is-invalid @enderror"
+        id="appointment_duration-id"
+        placeholder="Enter ..."
+        name="appointment_duration"
+        value="{{ old('appointment_duration') }}"
+      />
+      @error('appointment_duration')
+      <span class="error invalid-feedback"> {{ $message }} </span>
+      @enderror
+    </div>
+  </div>
+</form>

@@ -1,0 +1,507 @@
+<form method="POST" action="">@csrf<div class="col-sm-6">
+            <div class="form-group">
+                <label for="surname-id">Surname</label>
+                <input type="text" class="form-control @error('surname') is-invalid @enderror"
+                    id="surname-id" placeholder="Enter ..." name="surname" value="{{ old('surname') }}">
+                @error('surname')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="other_names-id">Other name(s)</label>
+                <input type="text" class="form-control @error('other_names') is-invalid @enderror"
+                    id="other_names-id" placeholder="Enter ..." name="other_names" value="{{ old('other_names') }}">
+                @error('other_names')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="nationality-id">Nationality</label>
+                <input type="text" class="form-control @error('nationality') is-invalid @enderror"
+                    id="nationality-id" placeholder="Enter ..." name="nationality" value="{{ old('nationality') }}">
+                @error('nationality')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="gender-id">Gender</label>
+                <input type="text" class="form-control @error('gender') is-invalid @enderror"
+                    id="gender-id" placeholder="Enter ..." name="gender" value="{{ old('gender') }}">
+                @error('gender')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="languages_spoken-id">Languages Spoken</label>
+                <input type="text" class="form-control @error('languages_spoken') is-invalid @enderror"
+                    id="languages_spoken-id" placeholder="Enter ..." name="languages_spoken" value="{{ old('languages_spoken') }}">
+                @error('languages_spoken')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="marital_status-id">Marital Status</label>
+                <input type="text" class="form-control @error('marital_status') is-invalid @enderror"
+                    id="marital_status-id" placeholder="Enter ..." name="marital_status" value="{{ old('marital_status') }}">
+                @error('marital_status')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="religion-id">Religion</label>
+                <input type="text" class="form-control @error('religion') is-invalid @enderror"
+                    id="religion-id" placeholder="Enter ..." name="religion" value="{{ old('religion') }}">
+                @error('religion')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="dob-id">Date of Birth</label>
+                <input type="text" class="form-control @error('dob') is-invalid @enderror"
+                    id="dob-id" placeholder="Enter ..." name="dob" value="{{ old('dob') }}">
+                @error('dob')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="place_of_birth-id">Place of Birth</label>
+                <input type="text" class="form-control @error('place_of_birth') is-invalid @enderror"
+                    id="place_of_birth-id" placeholder="Enter ..." name="place_of_birth" value="{{ old('place_of_birth') }}">
+                @error('place_of_birth')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="sub_county-id">Sub County</label>
+                <input type="text" class="form-control @error('sub_county') is-invalid @enderror"
+                    id="sub_county-id" placeholder="Enter ..." name="sub_county" value="{{ old('sub_county') }}">
+                @error('sub_county')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="county-id">County</label>
+                <input type="text" class="form-control @error('county') is-invalid @enderror"
+                    id="county-id" placeholder="Enter ..." name="county" value="{{ old('county') }}">
+                @error('county')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="district-id">District</label>
+                <input type="text" class="form-control @error('district') is-invalid @enderror"
+                    id="district-id" placeholder="Enter ..." name="district" value="{{ old('district') }}">
+                @error('district')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="village-id">Village/LC1</label>
+                <input type="text" class="form-control @error('village') is-invalid @enderror"
+                    id="village-id" placeholder="Enter ..." name="village" value="{{ old('village') }}">
+                @error('village')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="town-id">Town</label>
+                <input type="text" class="form-control @error('town') is-invalid @enderror"
+                    id="town-id" placeholder="Enter ..." name="town" value="{{ old('town') }}">
+                @error('town')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="telephone-id">Telephone</label>
+                <input type="text" class="form-control @error('telephone') is-invalid @enderror"
+                    id="telephone-id" placeholder="Enter ..." name="telephone" value="{{ old('telephone') }}">
+                @error('telephone')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="email-id">Email</label>
+                <input type="text" class="form-control @error('email') is-invalid @enderror"
+                    id="email-id" placeholder="Enter ..." name="email" value="{{ old('email') }}">
+                @error('email')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="profile_picture-id">Profile Picture</label>
+                <input type="text" class="form-control @error('profile_picture') is-invalid @enderror"
+                    id="profile_picture-id" placeholder="Enter ..." name="profile_picture" value="{{ old('profile_picture') }}">
+                @error('profile_picture')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="father_name-id">Father's Name</label>
+                <input type="text" class="form-control @error('father_name') is-invalid @enderror"
+                    id="father_name-id" placeholder="Enter ..." name="father_name" value="{{ old('father_name') }}">
+                @error('father_name')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="father_address-id">Address</label>
+                <input type="text" class="form-control @error('father_address') is-invalid @enderror"
+                    id="father_address-id" placeholder="Enter ..." name="father_address" value="{{ old('father_address') }}">
+                @error('father_address')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="father_phone-id">Phone Number</label>
+                <input type="text" class="form-control @error('father_phone') is-invalid @enderror"
+                    id="father_phone-id" placeholder="Enter ..." name="father_phone" value="{{ old('father_phone') }}">
+                @error('father_phone')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="mother_name-id">Mother's Name</label>
+                <input type="text" class="form-control @error('mother_name') is-invalid @enderror"
+                    id="mother_name-id" placeholder="Enter ..." name="mother_name" value="{{ old('mother_name') }}">
+                @error('mother_name')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="mother_address-id">Address</label>
+                <input type="text" class="form-control @error('mother_address') is-invalid @enderror"
+                    id="mother_address-id" placeholder="Enter ..." name="mother_address" value="{{ old('mother_address') }}">
+                @error('mother_address')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="mother_phone-id">Phone Number</label>
+                <input type="text" class="form-control @error('mother_phone') is-invalid @enderror"
+                    id="mother_phone-id" placeholder="Enter ..." name="mother_phone" value="{{ old('mother_phone') }}">
+                @error('mother_phone')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="next_of_kin_name-id">Next of Kin's Name</label>
+                <input type="text" class="form-control @error('next_of_kin_name') is-invalid @enderror"
+                    id="next_of_kin_name-id" placeholder="Enter ..." name="next_of_kin_name" value="{{ old('next_of_kin_name') }}">
+                @error('next_of_kin_name')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="place_of_origin-id">Place of Origin</label>
+                <input type="text" class="form-control @error('place_of_origin') is-invalid @enderror"
+                    id="place_of_origin-id" placeholder="Enter ..." name="place_of_origin" value="{{ old('place_of_origin') }}">
+                @error('place_of_origin')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="next_of_kin_address-id">Address</label>
+                <input type="text" class="form-control @error('next_of_kin_address') is-invalid @enderror"
+                    id="next_of_kin_address-id" placeholder="Enter ..." name="next_of_kin_address" value="{{ old('next_of_kin_address') }}">
+                @error('next_of_kin_address')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="next_of_kin_relationship-id">Relationship</label>
+                <input type="text" class="form-control @error('next_of_kin_relationship') is-invalid @enderror"
+                    id="next_of_kin_relationship-id" placeholder="Enter ..." name="next_of_kin_relationship" value="{{ old('next_of_kin_relationship') }}">
+                @error('next_of_kin_relationship')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="spouse_name-id">Name of Spouse</label>
+                <input type="text" class="form-control @error('spouse_name') is-invalid @enderror"
+                    id="spouse_name-id" placeholder="Enter ..." name="spouse_name" value="{{ old('spouse_name') }}">
+                @error('spouse_name')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="spouse_place_of_birth-id">Place of Birth</label>
+                <input type="text" class="form-control @error('spouse_place_of_birth') is-invalid @enderror"
+                    id="spouse_place_of_birth-id" placeholder="Enter ..." name="spouse_place_of_birth" value="{{ old('spouse_place_of_birth') }}">
+                @error('spouse_place_of_birth')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="no_of_children-id">Number of Children</label>
+                <input type="text" class="form-control @error('no_of_children') is-invalid @enderror"
+                    id="no_of_children-id" placeholder="Enter ..." name="no_of_children" value="{{ old('no_of_children') }}">
+                @error('no_of_children')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="name_of_child[]-id">Name of Child</label>
+                <input type="text" class="form-control @error('name_of_child[]') is-invalid @enderror"
+                    id="name_of_child[]-id" placeholder="Enter ..." name="name_of_child[]" value="{{ old('name_of_child[]') }}">
+                @error('name_of_child[]')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="child_gender[]-id">Gender</label>
+                <input type="text" class="form-control @error('child_gender[]') is-invalid @enderror"
+                    id="child_gender[]-id" placeholder="Enter ..." name="child_gender[]" value="{{ old('child_gender[]') }}">
+                @error('child_gender[]')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="child_dob-id">Date of Birth</label>
+                <input type="text" class="form-control @error('child_dob') is-invalid @enderror"
+                    id="child_dob-id" placeholder="Enter ..." name="child_dob" value="{{ old('child_dob') }}">
+                @error('child_dob')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="nssf-id">NSSF Number</label>
+                <input type="text" class="form-control @error('nssf') is-invalid @enderror"
+                    id="nssf-id" placeholder="Enter ..." name="nssf" value="{{ old('nssf') }}">
+                @error('nssf')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="acc_no-id">Account Number</label>
+                <input type="text" class="form-control @error('acc_no') is-invalid @enderror"
+                    id="acc_no-id" placeholder="Enter ..." name="acc_no" value="{{ old('acc_no') }}">
+                @error('acc_no')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="bank_name-id">Bank</label>
+                <input type="text" class="form-control @error('bank_name') is-invalid @enderror"
+                    id="bank_name-id" placeholder="Enter ..." name="bank_name" value="{{ old('bank_name') }}">
+                @error('bank_name')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="tin_no-id">Tin Number</label>
+                <input type="text" class="form-control @error('tin_no') is-invalid @enderror"
+                    id="tin_no-id" placeholder="Enter ..." name="tin_no" value="{{ old('tin_no') }}">
+                @error('tin_no')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="driver_license-id">Driver License</label>
+                <input type="text" class="form-control @error('driver_license') is-invalid @enderror"
+                    id="driver_license-id" placeholder="Enter ..." name="driver_license" value="{{ old('driver_license') }}">
+                @error('driver_license')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="nin-id">Passport Number/NIN</label>
+                <input type="text" class="form-control @error('nin') is-invalid @enderror"
+                    id="nin-id" placeholder="Enter ..." name="nin" value="{{ old('nin') }}">
+                @error('nin')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="job_title-id">Job Title / Designation</label>
+                <input type="text" class="form-control @error('job_title') is-invalid @enderror"
+                    id="job_title-id" placeholder="Enter ..." name="job_title" value="{{ old('job_title') }}">
+                @error('job_title')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="salary-id">Monthly Salary</label>
+                <input type="text" class="form-control @error('salary') is-invalid @enderror"
+                    id="salary-id" placeholder="Enter ..." name="salary" value="{{ old('salary') }}">
+                @error('salary')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="first_appointment_date-id">Date of First Appointment</label>
+                <input type="text" class="form-control @error('first_appointment_date') is-invalid @enderror"
+                    id="first_appointment_date-id" placeholder="Enter ..." name="first_appointment_date" value="{{ old('first_appointment_date') }}">
+                @error('first_appointment_date')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="present_appointment_date-id">Date of Present Appointment</label>
+                <input type="text" class="form-control @error('present_appointment_date') is-invalid @enderror"
+                    id="present_appointment_date-id" placeholder="Enter ..." name="present_appointment_date" value="{{ old('present_appointment_date') }}">
+                @error('present_appointment_date')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="department-id">Department/Section</label>
+                <input type="text" class="form-control @error('department') is-invalid @enderror"
+                    id="department-id" placeholder="Enter ..." name="department" value="{{ old('department') }}">
+                @error('department')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="duty_station-id">Duty Station</label>
+                <input type="text" class="form-control @error('duty_station') is-invalid @enderror"
+                    id="duty_station-id" placeholder="Enter ..." name="duty_station" value="{{ old('duty_station') }}">
+                @error('duty_station')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div><div class="col-sm-6">
+            <div class="form-group">
+                <label for="memberships-id">Membership to: Societies, Clubs and other Organizations</label>
+                <input type="text" class="form-control @error('memberships') is-invalid @enderror"
+                    id="memberships-id" placeholder="Enter ..." name="memberships" value="{{ old('memberships') }}">
+                @error('memberships')
+                    <span class="error invalid-feedback">
+                    {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        </div></form>

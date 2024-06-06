@@ -1,0 +1,67 @@
+<form method="POST" action="">
+  @csrf
+  <div class="col-sm-6">
+    <div class="form-group">
+      <label for="name-id">Loan name</label>
+      <input
+        type="text"
+        class="form-control @error('name') is-invalid @enderror"
+        id="name-id"
+        placeholder="Enter ..."
+        name="name"
+        value="{{ old('name') }}"
+      />
+      @error('name')
+      <span class="error invalid-feedback"> {{ $message }} </span>
+      @enderror
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="form-group">
+      <label for="description-id">Description</label>
+      <input
+        type="text"
+        class="form-control @error('description') is-invalid @enderror"
+        id="description-id"
+        placeholder="Enter ..."
+        name="description"
+        value="{{ old('description') }}"
+      />
+      @error('description')
+      <span class="error invalid-feedback"> {{ $message }} </span>
+      @enderror
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="form-group">
+      <label for="image-id">Image</label>
+      <input
+        type="text"
+        class="form-control @error('image') is-invalid @enderror"
+        id="image-id"
+        placeholder="Enter ..."
+        name="image"
+        value="{{ old('image') }}"
+      />
+      @error('image')
+      <span class="error invalid-feedback"> {{ $message }} </span>
+      @enderror
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="form-group">
+      <label for="form-id">Loan Application Form</label>
+      <input
+        type="text"
+        class="form-control @error('form') is-invalid @enderror"
+        id="form-id"
+        placeholder="Enter ..."
+        name="form"
+        value="{{ old('form') }}"
+      />
+      @error('form')
+      <span class="error invalid-feedback"> {{ $message }} </span>
+      @enderror
+    </div>
+  </div>
+</form>
